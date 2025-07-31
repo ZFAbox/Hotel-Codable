@@ -84,6 +84,122 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="" id="xKX-8z-trd">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="RjD-qH-xrX">
+                                        <rect key="frame" x="0.0" y="230.99999618530273" width="393" height="30.333333969116211"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RjD-qH-xrX" id="oWY-RR-Xif">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="30.333333969116211"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYy-gh-h0V">
+                                                    <rect key="frame" x="16" y="0.0" width="360" height="30.333333333333332"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check-In Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlX-Gm-ZPC">
+                                                            <rect key="frame" x="0.0" y="0.0" width="318.66666666666669" height="30.333333333333332"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnm-wQ-w5e">
+                                                            <rect key="frame" x="318.66666666666669" y="0.0" width="41.333333333333314" height="30.333333333333332"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="qrN-lN-VUC"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="jYy-gh-h0V" secondAttribute="trailing" constant="17" id="ec0-H1-Oga"/>
+                                                <constraint firstAttribute="bottom" secondItem="jYy-gh-h0V" secondAttribute="bottom" id="fMm-Ti-00G"/>
+                                                <constraint firstItem="jYy-gh-h0V" firstAttribute="leading" secondItem="oWY-RR-Xif" secondAttribute="leading" constant="16" id="rXV-Kc-wES"/>
+                                                <constraint firstItem="jYy-gh-h0V" firstAttribute="top" secondItem="oWY-RR-Xif" secondAttribute="top" id="yRv-mC-kaS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="lVb-Hw-YVJ">
+                                        <rect key="frame" x="0.0" y="261.33333015441895" width="393" height="216.33332824707031"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lVb-Hw-YVJ" id="cdv-8Z-EHW">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="216.33332824707031"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="ajM-GU-9wK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="216.33333333333334"/>
+                                                </datePicker>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ajM-GU-9wK" firstAttribute="top" secondItem="cdv-8Z-EHW" secondAttribute="top" id="21a-0z-2HS"/>
+                                                <constraint firstItem="ajM-GU-9wK" firstAttribute="leading" secondItem="cdv-8Z-EHW" secondAttribute="leading" id="Efo-cJ-Rtd"/>
+                                                <constraint firstItem="ajM-GU-9wK" firstAttribute="centerX" secondItem="cdv-8Z-EHW" secondAttribute="centerX" id="bJy-QI-uT0"/>
+                                                <constraint firstAttribute="trailing" secondItem="ajM-GU-9wK" secondAttribute="trailing" id="hWd-hA-eH9"/>
+                                                <constraint firstItem="ajM-GU-9wK" firstAttribute="centerY" secondItem="cdv-8Z-EHW" secondAttribute="centerY" id="jeA-QP-8bU"/>
+                                                <constraint firstAttribute="bottom" secondItem="ajM-GU-9wK" secondAttribute="bottom" id="sZY-Ff-gVU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="0rj-6C-iTP">
+                                        <rect key="frame" x="0.0" y="477.66665840148926" width="393" height="30.333333969116211"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0rj-6C-iTP" id="o93-n6-Zub">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="30.333333969116211"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMx-Pw-n0s">
+                                                    <rect key="frame" x="16" y="0.0" width="361" height="30.333333333333332"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check-Out Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZP-3Z-hIv">
+                                                            <rect key="frame" x="0.0" y="0.0" width="319.66666666666669" height="30.333333333333332"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWd-cs-PTJ">
+                                                            <rect key="frame" x="319.66666666666669" y="0.0" width="41.333333333333314" height="30.333333333333332"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="Fj7-Nw-lOt"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="bMx-Pw-n0s" secondAttribute="trailing" constant="16" id="IBM-Lq-sTE"/>
+                                                <constraint firstItem="bMx-Pw-n0s" firstAttribute="leading" secondItem="o93-n6-Zub" secondAttribute="leading" constant="16" id="Snz-Dt-HMC"/>
+                                                <constraint firstItem="bMx-Pw-n0s" firstAttribute="top" secondItem="o93-n6-Zub" secondAttribute="top" id="fWW-Lw-Ywu"/>
+                                                <constraint firstAttribute="bottom" secondItem="bMx-Pw-n0s" secondAttribute="bottom" id="xgK-c2-5Tx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="W5P-6G-BJX">
+                                        <rect key="frame" x="0.0" y="507.99999237060547" width="393" height="216.33332824707031"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W5P-6G-BJX" id="o7u-0R-ibe">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="216.33332824707031"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="SPm-bG-wkW">
+                                                    <rect key="frame" x="36.666666666666657" y="0.0" width="320" height="216.33333333333334"/>
+                                                </datePicker>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SPm-bG-wkW" firstAttribute="centerY" secondItem="o7u-0R-ibe" secondAttribute="centerY" id="2l9-N2-uXr"/>
+                                                <constraint firstItem="SPm-bG-wkW" firstAttribute="centerX" secondItem="o7u-0R-ibe" secondAttribute="centerX" id="h3s-iS-0zX"/>
+                                                <constraint firstItem="SPm-bG-wkW" firstAttribute="top" secondItem="o7u-0R-ibe" secondAttribute="top" id="jja-Y7-N78"/>
+                                                <constraint firstAttribute="bottom" secondItem="SPm-bG-wkW" secondAttribute="bottom" id="tib-Rp-qgU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="092-km-DDF" id="RNv-HF-JmR"/>
@@ -92,7 +208,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="New Guest Registration" id="gCe-wU-Z1j">
                         <barButtonItem key="rightBarButtonItem" style="done" id="l0s-2m-qsh">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="BeG-WY-2ZD">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="BeG-WY-2ZD">
                                 <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -104,6 +220,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="checkInDateLabel" destination="rnm-wQ-w5e" id="n2i-4l-lo2"/>
+                        <outlet property="checkInDatePicker" destination="ajM-GU-9wK" id="wXP-x5-R4t"/>
                         <outlet property="emailTextField" destination="eKJ-W9-I6k" id="bpn-DL-KUg"/>
                         <outlet property="firstNameTextField" destination="J5l-Jv-CZE" id="7ly-cb-PJx"/>
                         <outlet property="seconfNameTextField" destination="qLk-VC-yhK" id="kn7-zB-vnE"/>
