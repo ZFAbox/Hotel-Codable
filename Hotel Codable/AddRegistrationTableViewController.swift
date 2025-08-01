@@ -70,7 +70,17 @@ class AddRegistrationTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView
+        tableView.deselectRow(at: indexPath, animated: true)
+        switch indexPath {
+        case checkInDatePickerIndexPath:
+            checkInDatePickerVisibale.toggle()
+        case checkOutDatePickerIndexPath:
+            checkOutDatePickerVisible.toggle()
+        default:
+            return
+        }
+        tableView.beginUpdates()
+        tableView.endUpdates()
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -81,7 +91,6 @@ class AddRegistrationTableViewController: UITableViewController {
             return 0
         default:
             return UITableView.automaticDimension
-            
         }
     }
     
