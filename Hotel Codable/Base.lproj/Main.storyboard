@@ -222,6 +222,8 @@
                     <connections>
                         <outlet property="checkInDateLabel" destination="rnm-wQ-w5e" id="n2i-4l-lo2"/>
                         <outlet property="checkInDatePicker" destination="ajM-GU-9wK" id="wXP-x5-R4t"/>
+                        <outlet property="checkOutDateLabel" destination="QWd-cs-PTJ" id="y9K-py-06S"/>
+                        <outlet property="checkOutDatePicker" destination="SPm-bG-wkW" id="Rob-OP-TNT"/>
                         <outlet property="emailTextField" destination="eKJ-W9-I6k" id="bpn-DL-KUg"/>
                         <outlet property="firstNameTextField" destination="J5l-Jv-CZE" id="7ly-cb-PJx"/>
                         <outlet property="seconfNameTextField" destination="qLk-VC-yhK" id="kn7-zB-vnE"/>
