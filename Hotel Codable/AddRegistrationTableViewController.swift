@@ -22,7 +22,8 @@ class AddRegistrationTableViewController: UITableViewController {
     
     private let checkInDatePickerIndexPath = IndexPath(row: 1, section: 1)
     private let checkOutDatePickerIndexPath = IndexPath(row: 3, section: 1)
-    
+    private let checkInLabelIndexPath = IndexPath(row: 0, section: 1)
+    private let checkOutLabelIndexPath = IndexPath(row: 2, section: 1)
     //Section 1
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var seconfNameTextField: UITextField!
@@ -72,9 +73,12 @@ class AddRegistrationTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         switch indexPath {
-        case checkInDatePickerIndexPath:
+        case checkInLabelIndexPath where checkOutDatePickerVisible == false:
             checkInDatePickerVisibale.toggle()
-        case checkOutDatePickerIndexPath:
+        case checkOutLabelIndexPath where checkInDatePickerVisibale == false:
+            checkOutDatePickerVisible.toggle()
+        case checkInLabelIndexPath, checkOutLabelIndexPath:
+            checkInDatePickerVisibale.toggle()
             checkOutDatePickerVisible.toggle()
         default:
             return
