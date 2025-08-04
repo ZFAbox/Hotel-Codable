@@ -35,6 +35,16 @@ class AddRegistrationTableViewController: UITableViewController {
     @IBOutlet weak var checkOutDateLabel: UILabel!
     @IBOutlet weak var checkOutDatePicker: UIDatePicker!
     
+    //Section 3
+    @IBOutlet weak var adultsLabelCount: UILabel!
+    @IBOutlet weak var adultsStepper: UIStepper!
+    @IBOutlet weak var childrenLabelCount: UILabel!
+    @IBOutlet weak var childrenStepper: UIStepper!
+    
+    // Section 4
+    @IBOutlet weak var wifiSwitch: UISwitch!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let midnightTodayDate = Calendar.current.startOfDay(for: Date())
@@ -43,6 +53,7 @@ class AddRegistrationTableViewController: UITableViewController {
         
         checkOutDatePicker.minimumDate = Calendar.current.date(byAdding: .day, value: 1, to: midnightTodayDate)
         updateDateViews()
+        updateNumberOfGuests()
     }
     
     private func updateDateViews() {
@@ -57,6 +68,8 @@ class AddRegistrationTableViewController: UITableViewController {
         let email = emailTextField.text ?? ""
         let checkInDate = checkInDateLabel.text ?? ""
         let checkOutDate = checkOutDateLabel.text ?? ""
+        let adultsNumber = adultsLabelCount.text ?? ""
+        let childrenNumber = childrenLabelCount.text ?? ""
         
         print("Done button tapped!")
         print("First Name: \(firstName)")
@@ -64,10 +77,25 @@ class AddRegistrationTableViewController: UITableViewController {
         print("Email: \(email)")
         print("Check-In Date: \(checkInDate)")
         print("Check-OUt Date: \(checkOutDate)")
+        print("Adults number: \(adultsNumber)")
+        print("Children number: \(childrenNumber)")
+        print("Wi-Fi switch is on: \(wifiSwitch.isOn)")
     }
     
     @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
         updateDateViews()
+    }
+    
+    @IBAction func stepperValueChanged(_ sender: Any) {
+        updateNumberOfGuests()
+    }
+    
+    @IBAction func wifiSwitchChanged(_ sender: Any) {
+    }
+    
+    private func updateNumberOfGuests() {
+        adultsLabelCount.text = String(Int(adultsStepper.value))
+        childrenLabelCount.text = String(Int(childrenStepper.value))
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
