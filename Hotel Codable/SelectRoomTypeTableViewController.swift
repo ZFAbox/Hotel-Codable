@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol SelecyRoomTyperTableViewControllerDelegate: AnyObject {
+    func selectRoomTypeTableViewController( _ controller: SelectRoomTypeTableViewController, didSelect roomType: RoomType)
+}
+
 class SelectRoomTypeTableViewController: UITableViewController {
+    
+    weak var delegate: SelecyRoomTyperTableViewControllerDelegate?
     
     var roomType: RoomType?
     
@@ -41,21 +47,20 @@ class SelectRoomTypeTableViewController: UITableViewController {
         cellContentConfiguration.text = roomType.name
         cellContentConfiguration.secondaryText = "$\(roomType.price)"
         cell.contentConfiguration = cellContentConfiguration
+        if roomType == self.roomType {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
         return cell
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let roomType = RoomType.all[indexPath.row]
+        self.roomType = roomType
+        delegate?.selectRoomTypeTableViewController(self, didSelect: roomType)
+        tableView.reloadData()
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
