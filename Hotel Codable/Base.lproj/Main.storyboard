@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Kz-h3-zky">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="69h-wv-eAS">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -210,25 +210,25 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H47-JM-PB7">
-                                                    <rect key="frame" x="16" y="0.0" width="361" height="40.333333333333336"/>
+                                                    <rect key="frame" x="16" y="0.0" width="361" height="44"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Adults" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jME-gj-Hrm">
-                                                            <rect key="frame" x="0.0" y="0.0" width="248.66666666666666" height="40.333333333333336"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="248.66666666666666" height="44"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ELr-bb-ZMG">
-                                                            <rect key="frame" x="248.66666666666671" y="0.0" width="112.33333333333334" height="40.333333333333336"/>
+                                                            <rect key="frame" x="248.66666666666671" y="0.0" width="112.33333333333334" height="44"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jw-W5-vyB">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="10.333333333333334" height="40.333333333333336"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="10.333333333333334" height="44"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="YpQ-Ht-dib">
-                                                                    <rect key="frame" x="18.333333333333314" y="0.0" width="94" height="40.333333333333336"/>
+                                                                    <rect key="frame" x="18.333333333333314" y="0.0" width="94" height="44"/>
                                                                     <connections>
                                                                         <action selector="stepperValueChanged:" destination="092-km-DDF" eventType="valueChanged" id="694-Ag-Rrd"/>
                                                                     </connections>
@@ -257,25 +257,25 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qlg-6p-oho">
-                                                    <rect key="frame" x="16" y="0.0" width="360" height="40.333333333333336"/>
+                                                    <rect key="frame" x="16" y="0.0" width="360" height="44"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Children" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpK-yN-dzg">
-                                                            <rect key="frame" x="0.0" y="0.0" width="247.66666666666666" height="40.333333333333336"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="247.66666666666666" height="44"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CAy-a7-pPx">
-                                                            <rect key="frame" x="247.66666666666671" y="0.0" width="112.33333333333334" height="40.333333333333336"/>
+                                                            <rect key="frame" x="247.66666666666671" y="0.0" width="112.33333333333334" height="44"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0st-AC-34P">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="10.333333333333334" height="40.333333333333336"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="10.333333333333334" height="44"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Hv9-a4-gND">
-                                                                    <rect key="frame" x="18.333333333333314" y="0.0" width="94" height="40.333333333333336"/>
+                                                                    <rect key="frame" x="18.333333333333343" y="0.0" width="94" height="44"/>
                                                                     <connections>
                                                                         <action selector="stepperValueChanged:" destination="092-km-DDF" eventType="valueChanged" id="rSH-n7-TCE"/>
                                                                     </connections>
@@ -301,32 +301,32 @@
                             <tableViewSection headerTitle="" id="aaR-mp-sqg">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="aJd-md-rec">
-                                        <rect key="frame" x="0.0" y="835.9999828338623" width="393" height="40.333332061767578"/>
+                                        <rect key="frame" x="0.0" y="835.9999828338623" width="393" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aJd-md-rec" id="tk6-az-Yde">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="40.333332061767578"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jd5-tB-tXl">
-                                                    <rect key="frame" x="16" y="0.0" width="361" height="40.333333333333336"/>
+                                                    <rect key="frame" x="16" y="0.0" width="361" height="44"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Wi-Fi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lmw-sH-YAf">
-                                                            <rect key="frame" x="0.0" y="0.0" width="214.33333333333334" height="40.333333333333336"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="214.33333333333334" height="44"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xdi-8i-ZDS">
-                                                            <rect key="frame" x="214.33333333333337" y="0.0" width="146.66666666666663" height="40.333333333333336"/>
+                                                            <rect key="frame" x="214.33333333333337" y="0.0" width="146.66666666666663" height="44"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10 per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpO-n1-srt">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="89.666666666666671" height="40.333333333333336"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="89.666666666666671" height="44"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WfY-pz-Dch">
-                                                                    <rect key="frame" x="97.666666666666657" y="0.0" width="51" height="40.333333333333336"/>
+                                                                    <rect key="frame" x="97.666666666666657" y="0.0" width="51" height="44"/>
                                                                     <connections>
                                                                         <action selector="wifiSwitchChanged:" destination="092-km-DDF" eventType="valueChanged" id="kuN-0i-pFw"/>
                                                                     </connections>
@@ -352,23 +352,23 @@
                             <tableViewSection headerTitle="" id="daM-57-jId">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="SyL-Sn-g6W">
-                                        <rect key="frame" x="0.0" y="916.66664886474609" width="393" height="40.333332061767578"/>
+                                        <rect key="frame" x="0.0" y="920.33331680297852" width="393" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SyL-Sn-g6W" id="2Nb-Te-uwb">
-                                            <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="40.333332061767578"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374.66666666666669" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yL-ot-Emr">
-                                                    <rect key="frame" x="16" y="0.0" width="330.66666666666669" height="40.333333333333336"/>
+                                                    <rect key="frame" x="16" y="0.0" width="330.66666666666669" height="44"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Room Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0L-ff-mni">
-                                                            <rect key="frame" x="0.0" y="0.0" width="244.66666666666666" height="40.333333333333336"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="244.66666666666666" height="44"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two Queen" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNb-AL-ZUf">
-                                                            <rect key="frame" x="244.66666666666669" y="0.0" width="86" height="40.333333333333336"/>
+                                                            <rect key="frame" x="244.66666666666669" y="0.0" width="86" height="44"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -386,6 +386,9 @@
                                                 <constraint firstItem="6yL-ot-Emr" firstAttribute="top" secondItem="2Nb-Te-uwb" secondAttribute="top" id="kGI-7m-it9"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="0Kz-h3-zky" kind="show" destinationCreationSelector="selectRoomType:" id="JQa-Z1-yGX"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -409,6 +412,7 @@
                         <outlet property="childrenStepper" destination="Hv9-a4-gND" id="ErC-il-0kc"/>
                         <outlet property="emailTextField" destination="eKJ-W9-I6k" id="bpn-DL-KUg"/>
                         <outlet property="firstNameTextField" destination="J5l-Jv-CZE" id="7ly-cb-PJx"/>
+                        <outlet property="roomTypeLabel" destination="dNb-AL-ZUf" id="GMN-h4-XEr"/>
                         <outlet property="seconfNameTextField" destination="qLk-VC-yhK" id="kn7-zB-vnE"/>
                         <outlet property="wifiSwitch" destination="WfY-pz-Dch" id="Wf0-EH-JmZ"/>
                     </connections>
@@ -456,6 +460,7 @@
                             <outlet property="delegate" destination="0Kz-h3-zky" id="hh3-vP-IdL"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="CM0-VA-nUr"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3c8-F6-9CG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
