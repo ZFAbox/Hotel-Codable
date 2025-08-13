@@ -1,19 +1,19 @@
 
 import Foundation
 
-struct GuestModel {
-    var firstName: String
-    var secondName: String
-    var emailAdress: String
-    
-    var checkInDate: Date
-    var checkOutDate: Date
-    var numberOfAdults: Int
-    var numberOFChildren: Int
-    
-    var wifi: Bool
-    var roomType: RoomType
-}
+//struct GuestModel {
+//    var firstName: String
+//    var secondName: String
+//    var emailAdress: String
+//    
+//    var checkInDate: Date
+//    var checkOutDate: Date
+//    var numberOfAdults: Int
+//    var numberOFChildren: Int
+//    
+//    var wifi: Bool
+//    var roomType: RoomType
+//}
 
 struct RoomType: Equatable {
     var id: Int

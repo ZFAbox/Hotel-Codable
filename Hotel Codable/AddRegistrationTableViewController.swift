@@ -22,6 +22,31 @@ class AddRegistrationTableViewController: UITableViewController {
     
     private var roomType: RoomType?
     
+    private var registration: Registration? {
+        guard let roomType = self.roomType else { return nil }
+        
+        let firstName = firstNameTextField.text ?? ""
+        let lastName = seconfNameTextField.text ?? ""
+        let emailAdress = emailTextField.text ?? ""
+        let checkInDate = checkInDatePicker.date
+        let checkOutDate = checkOutDatePicker.date
+        let numberOfAdults = Int(adultsLabelCount.text ?? "0") ?? 0
+        let numbersOfChildren = Int(childrenLabelCount.text ?? "0") ?? 0
+        let wifi = wifiSwitch.isOn
+        
+        return Registration(
+            firstName: firstName,
+            lastName: lastName,
+            emailAdress: emailAdress,
+            checkInDate: checkInDate,
+            checkOutDate: checkOutDate,
+            numberOfAdults: numberOfAdults,
+            numberOfChildren: numbersOfChildren,
+            wifi: wifi,
+            roomType: roomType
+        )
+    }
+    
     private let checkInDatePickerIndexPath = IndexPath(row: 1, section: 1)
     private let checkOutDatePickerIndexPath = IndexPath(row: 3, section: 1)
     private let checkInLabelIndexPath = IndexPath(row: 0, section: 1)
