@@ -22,7 +22,9 @@ class AddRegistrationTableViewController: UITableViewController {
     
     private var roomType: RoomType?
     
-    private var registration: Registration? {
+    private var totalSum: Int = 0
+    
+    var registration: Registration? {
         guard let roomType = self.roomType else { return nil }
         
         let firstName = firstNameTextField.text ?? ""
@@ -73,6 +75,8 @@ class AddRegistrationTableViewController: UITableViewController {
     
     // Section 5
     @IBOutlet weak var roomTypeLabel: UILabel!
+    // Section 6
+    @IBOutlet weak var totalPriceLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -85,6 +89,7 @@ class AddRegistrationTableViewController: UITableViewController {
         updateDateViews()
         updateNumberOfGuests()
         updateRoomTypeLabel()
+        updateTotalPrice()
     }
     
     private func updateDateViews() {
@@ -98,6 +103,13 @@ class AddRegistrationTableViewController: UITableViewController {
         } else {
             roomTypeLabel.text = "Not set"
         }
+    }
+    
+    private func updateTotalPrice(){
+        let roomPrice = roomType?.price ?? 0
+        let wifiPrice = wifiSwitch.isOn ? 10 : 0
+        let totalPrice = roomPrice + wifiPrice
+        totalPriceLabel.text = "$\(totalPrice)"
     }
     
     @IBAction func doneBarButton(_ sender: Any) {
@@ -132,6 +144,7 @@ class AddRegistrationTableViewController: UITableViewController {
     }
     
     @IBAction func wifiSwitchChanged(_ sender: Any) {
+        updateTotalPrice()
     }
     
     
@@ -193,6 +206,7 @@ extension AddRegistrationTableViewController: SelecyRoomTyperTableViewController
     func selectRoomTypeTableViewController(_ controller: SelectRoomTypeTableViewController, didSelect roomType: RoomType) {
         self.roomType = roomType
         updateRoomTypeLabel()
+        updateTotalPrice()
     }
     
     
