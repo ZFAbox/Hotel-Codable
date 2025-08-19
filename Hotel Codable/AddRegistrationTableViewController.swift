@@ -150,6 +150,9 @@ class AddRegistrationTableViewController: UITableViewController {
     }
     
     
+    @IBAction func cancelButtonTapped(_ sender: Any) {
+        dismiss(animated: true)
+    }
     
     @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
         updateDateViews()

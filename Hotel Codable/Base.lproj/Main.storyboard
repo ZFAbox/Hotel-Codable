@@ -278,13 +278,13 @@
                                                             <rect key="frame" x="247.66666666666671" y="0.0" width="112.33333333333334" height="44"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0st-AC-34P">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="10.333333333333334" height="40.333333333333336"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="10.333333333333334" height="44"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Hv9-a4-gND">
-                                                                    <rect key="frame" x="18.333333333333343" y="0.0" width="94" height="40.333333333333336"/>
+                                                                    <rect key="frame" x="18.333333333333343" y="0.0" width="94" height="44"/>
                                                                     <connections>
                                                                         <action selector="stepperValueChanged:" destination="092-km-DDF" eventType="valueChanged" id="rSH-n7-TCE"/>
                                                                     </connections>
@@ -329,13 +329,13 @@
                                                             <rect key="frame" x="214.33333333333337" y="0.0" width="146.66666666666663" height="44"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10 per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpO-n1-srt">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="89.666666666666671" height="40.333333333333336"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="89.666666666666671" height="44"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WfY-pz-Dch">
-                                                                    <rect key="frame" x="97.666666666666657" y="0.0" width="51" height="40.333333333333336"/>
+                                                                    <rect key="frame" x="97.666666666666657" y="0.0" width="51" height="44"/>
                                                                     <connections>
                                                                         <action selector="wifiSwitchChanged:" destination="092-km-DDF" eventType="valueChanged" id="kuN-0i-pFw"/>
                                                                     </connections>
@@ -436,6 +436,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="New Guest Registration" id="gCe-wU-Z1j">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="K7N-34-Coa">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="092-km-DDF" id="H0V-nf-ffh"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="l0s-2m-qsh">
                             <connections>
                                 <segue destination="XwS-PX-dbq" kind="unwind" unwindAction="unwindWithSegue:" id="bHT-T0-9cT"/>
