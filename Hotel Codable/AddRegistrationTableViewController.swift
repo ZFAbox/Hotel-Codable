@@ -1,9 +1,3 @@
-//
-//  AddRegistrationTableViewController.swift
-//  Hotel Codable
-//
-//  Created by Федор Завьялов on 29.07.2025.
-//
 
 import UIKit
 
@@ -21,8 +15,6 @@ class AddRegistrationTableViewController: UITableViewController {
     }
     
     private var roomType: RoomType?
-    
-    private var totalSum: Int = 0
     
     var registration: Registration? {
         guard let roomType = self.roomType else { return nil }
@@ -78,6 +70,7 @@ class AddRegistrationTableViewController: UITableViewController {
     // Section 6
     @IBOutlet weak var totalPriceLabel: UILabel!
     
+    @IBOutlet weak var doneButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,6 +83,7 @@ class AddRegistrationTableViewController: UITableViewController {
         updateNumberOfGuests()
         updateRoomTypeLabel()
         updateTotalPrice()
+        updateDoneButtonState()
     }
     
     private func updateDateViews() {
@@ -110,6 +104,26 @@ class AddRegistrationTableViewController: UITableViewController {
         let wifiPrice = wifiSwitch.isOn ? 10 : 0
         let totalPrice = roomPrice + wifiPrice
         totalPriceLabel.text = "$\(totalPrice)"
+    }
+    
+    private func doneButtonAvailable() -> Bool {
+        let firstName = firstNameTextField.text ?? ""
+        let lastNmae = seconfNameTextField.text ?? ""
+        let email = emailTextField.text ?? ""
+        let roomTypeSelected = roomType != nil ? true : false
+        let adultsSelected = Int(adultsStepper.value) >= 1 ? true : false
+        
+        return !firstName.isEmpty &&
+        !lastNmae.isEmpty &&
+        !email.isEmpty && roomTypeSelected && adultsSelected
+    }
+    
+    private func updateDoneButtonState() {
+        doneButton.isEnabled = doneButtonAvailable()
+    }
+    
+    @IBAction func textEditingChanged(_ sender: UITextField) {
+        updateDoneButtonState()
     }
     
     @IBAction func doneBarButton(_ sender: Any) {
@@ -135,12 +149,15 @@ class AddRegistrationTableViewController: UITableViewController {
         print("Selected room type: \(selectedRoomType)")
     }
     
+    
+    
     @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
         updateDateViews()
     }
     
     @IBAction func stepperValueChanged(_ sender: Any) {
         updateNumberOfGuests()
+        updateDoneButtonState()
     }
     
     @IBAction func wifiSwitchChanged(_ sender: Any) {
@@ -207,6 +224,7 @@ extension AddRegistrationTableViewController: SelecyRoomTyperTableViewController
         self.roomType = roomType
         updateRoomTypeLabel()
         updateTotalPrice()
+        updateDoneButtonState()
     }
     
     
